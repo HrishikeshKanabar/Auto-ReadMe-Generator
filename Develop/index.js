@@ -3,7 +3,7 @@
 const inq = require('inquirer');
 const fileSys = require('fs');
 const genMarkdown = require('./utils/generateMarkdown.js');
-const { Console } = require('console');
+
 
 
 // An array of questions for user input
@@ -82,6 +82,7 @@ function init() {
 
     inq.prompt(questions).then(data=>{
         const dataForReadme =genMarkdown(data);
+        console.log(dataForReadme)
         writeToFile('./genratedReadMe.md',dataForReadme);
     });
 }
