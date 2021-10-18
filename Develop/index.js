@@ -1,14 +1,19 @@
 // Included packages needed for this application
 
-var inq = require('inquirer')
+const inq = require('inquirer');
+const fileSys = require('fs');
+const genMarkdown = require('./utils/generateMarkdown.js');
+const { Console } = require('console');
 
 
-// TODO: Create an array of questions for user input
+// An array of questions for user input
 const questions = [
     {
         type:"input",
         name:"title",
-        message:"What should be title for your project ?",
+        message:"What should be title for your project ?(Required)",
+        validate:(title)=>{if(title){return true}else{return 'Title is required to generate "ReadME" file'}},
+
 
     },
     {
@@ -45,13 +50,13 @@ const questions = [
     type: "list",
     message: "What kind of license should your project have?",
     name: "license",
-    choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 2","BSD 3","BSD 4","None"]
+    choices: ["GPL","MIT", "APACHE-2.0","BSD 2","BSD 3","BSD 4","Other","None"]
     }, 
     {
         type:"input",
         name:"username",
         message:"Please enter your Github username :",
-        
+        validate:(username)=>{if(username){return true}else{return 'Username is required to generate "ReadME" file'}},
     },
     {
         type:"input",
@@ -62,14 +67,22 @@ const questions = [
 
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// Function to write README file
+function writeToFile(fileName, data) {
+    fileSys.writeFile(fileName,data,err=>{
+        if(err){
+            return err;
+        }
+        console.log("Your 'README' has generated sucessfully !");
+    });
+}
 
-// TODO: Create a function to initialize app
+//Function to initialize app
 function init() {
 
     inq.prompt(questions).then(data=>{
-        console.log(data);
+        const dataForReadme =genMarkdown(data);
+        writeToFile('./genratedReadMe.md',dataForReadme);
     });
 }
 
