@@ -1,20 +1,53 @@
 // A function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if(license!=='other' || license!=="None"){
-    return '![GitHub license](https://img.shields.io/badge/license-${license}-brightgreen.svg)';
+  if(license=='GPL'){
+    return '![GitHub license](https://img.shields.io/badge/license-'+license+'-red.svg)';
+  }else if(license=='MIT'){
+    return '![GitHub license](https://img.shields.io/badge/license-'+license+'-yellow.svg)'; 
+  }else if(license=='APACHE'){
+    return '![GitHub license](https://img.shields.io/badge/license-'+license+'--blue.svg)'; 
+  }else if(license=='BSD'){
+    return '![GitHub license](https://img.shields.io/badge/license-'+license+'-orange.svg)'; 
+  }else if(license=='IPL'){
+    return '![GitHub license](https://img.shields.io/badge/license-'+license+'-brightgreen.svg)'; 
   }else{
-    return ''; 
+    return ' ';
   }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if(license=='GPL'){
+    return 'https://www.gnu.org/licenses/gpl-3.0';
+  }else if(license=='MIT'){
+    return 'https://opensource.org/licenses/MIT'; 
+  }else if(license=='APACHE'){
+    return 'https://opensource.org/licenses/Apache-2.0'; 
+  }else if(license=='BSD'){
+    return 'https://opensource.org/licenses/BSD-3-Clause'; 
+  }else if(license=='IPL'){
+    return 'https://opensource.org/licenses/IPL-1.0'; 
+  }else{
+    return ' ';
+  }
 
-// TODO: Create a function that returns the license section of README
+}
+
+// A function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+
+
+  if(license!=='Other' || license!=="None"){
+    return 'This appliction is covered under' + license + 'license';
+  }else{
+    return ''; 
+  }
+  
+
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -22,17 +55,17 @@ function generateMarkdown(data) {
   
   # ${data.title}
 
-  ![License](${renderLicenseBadge(data.license)})
+  ${renderLicenseBadge(data.license)}(${renderLicenseLink(data.license)})
 
 
   ## Description
   ${data.desc}
 
   ## Table of content
-  - Installation(#install)
-  - Usage(#usage)
-  - Contribution guidelines(#contri)
-  - Test(#test)
+  *[Installation](#install)
+  *[Usage](#usage)
+  *[Contribution guidelines](#contri)
+  *[Test](#test)
 
   ## Installation
   ${data.install}
@@ -41,7 +74,7 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License
-  This appliction is covered under  ${data.license} license
+  ${renderLicenseSection(data.license)}
 
   ## Contribution guidelines
   ${data.contri}
