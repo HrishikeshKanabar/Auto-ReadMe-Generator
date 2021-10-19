@@ -6,7 +6,7 @@ function renderLicenseBadge(license) {
   }else if(license=='MIT'){
     return '![GitHub license](https://img.shields.io/badge/license-'+license+'-yellow.svg)'; 
   }else if(license=='APACHE'){
-    return '![GitHub license](https://img.shields.io/badge/license-'+license+'--blue.svg)'; 
+    return '![GitHub license](https://img.shields.io/badge/license-'+license+'-blue.svg)'; 
   }else if(license=='BSD'){
     return '![GitHub license](https://img.shields.io/badge/license-'+license+'-orange.svg)'; 
   }else if(license=='IPL'){
