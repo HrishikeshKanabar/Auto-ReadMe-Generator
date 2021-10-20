@@ -2,47 +2,19 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license == "GPLv3") {
-    return (
-      "[![GitHub license](https://img.shields.io/badge/license-" +
-      license +
-      "-red.svg)]"
-    );
+    return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]";
   } else if (license == "GPLv2") {
-    return (
-      "[![GitHub license](https://img.shields.io/badge/license-" +
-      license +
-      "-red.svg)]"
-    );
+    return "[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)]";
   } else if (license == "MIT") {
-    return (
-      "[![GitHub license](https://img.shields.io/badge/license-" +
-      license +
-      "-yellow.svg)]"
-    );
+    return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
   } else if (license == "APACHE 2.0") {
-    return (
-      "[![GitHub license](https://img.shields.io/badge/license-" +
-      license +
-      "-blue.svg)]"
-    );
+    return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]";
   } else if (license == '"BSD 2-Clause') {
-    return (
-      "[![GitHub license](https://img.shields.io/badge/license-" +
-      license +
-      "-orange.svg)]"
-    );
+    return "[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)]";
   } else if (license == '"BSD 3-Clause') {
-    return (
-      "[![GitHub license](https://img.shields.io/badge/license-" +
-      license +
-      "-orange.svg)]"
-    );
+    return "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)]"; 
   } else if (license == "IPL") {
-    return (
-      "[![GitHub license](https://img.shields.io/badge/license-" +
-      license +
-      "-brightgreen.svg)]"
-    );
+    return "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)]";
   } else {
     return " ";
   }
