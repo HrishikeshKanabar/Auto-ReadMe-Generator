@@ -92,7 +92,7 @@ function init() {
   inq.prompt(questions).then((data) => {
     const dataForReadme = genMarkdown(data);
     console.log(dataForReadme);
-    writeToFile("./genratedReadMe.md", dataForReadme);
+    writeToFile("./generatedReadme/genratedReadMe.md", dataForReadme);
   });
 }
 
