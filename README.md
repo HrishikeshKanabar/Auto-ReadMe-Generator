@@ -26,11 +26,11 @@
 
  Web Application        
 :--------------------------------:|
-![Web Application]()      
+![Web Application](https://github.com/HrishikeshKanabar/Auto-ReadMe-Generator/blob/main/Develop/images/questions.JPG)      
 
 Genrated Readme  
 :--------------------------------:|
-![Genrated Readme ]()  
+![Genrated Readme ](https://github.com/HrishikeshKanabar/Auto-ReadMe-Generator/blob/main/Develop/images/readme.JPG)  
 
 ## Requirement achieved 
 
