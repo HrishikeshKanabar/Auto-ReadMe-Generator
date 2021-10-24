@@ -1,12 +1,12 @@
 
   
-  # My ReadME
+  # My readme
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
   ## Description
-  You can quickly and easily genrate a ReadmeFile by using command line application. This allows project creator to devote more time working on the project.
+  You can quickly and easily generate a README file by using a command-line application to generate one. This allows the project creator to devote more time working on the project.
 
   ## Table of content
 
@@ -23,16 +23,16 @@
   6.) [Questions](#questions)
 
   ## Installation
-  clone this project locally by git commands to run
+  doenload locally and run project
 
   ## Usage
-  run node index.js
+  Run node index.js 
 
   ## License
   This appliction is covered under MIT license
 
   ## Contribution
-  Send email to be added as contributor and open pull request
+  Send email to be added as contributor and open PR
 
   ## Test
   npm test or unit test
@@ -41,4 +41,4 @@
   
   Repo Link : https://github.com/HrishikeshKanabar/
   
-  Email :     test@gmail.com
+  Email :     hrishikesh_kanabar@yahoo.com
