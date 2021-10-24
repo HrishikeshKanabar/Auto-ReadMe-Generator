@@ -6,7 +6,7 @@
 
 # View Demo (Video Demo)
 
-<iframe src="https://drive.google.com/file/d/1ucVM6828aM_Xiw6zMAEiVgXQof5R-sei/preview" width="640" height="480" allow="autoplay"></iframe>
+ [Click here to see demo](https://drive.google.com/file/d/1ucVM6828aM_Xiw6zMAEiVgXQof5R-sei/view?usp=sharing)
 
 
 # Web Application (how to use)
