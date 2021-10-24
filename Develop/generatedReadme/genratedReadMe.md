@@ -1,12 +1,12 @@
 
   
-  # My Readme Generator
+  # My ReadME
 
-  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Artistic-2.0)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
   ## Description
-  You can quickly and easily generate a README file by using a command-line application to generate one. This allows the project creator to devote more time working on the project.
+  You can quickly and easily genrate a ReadmeFile by using command line application. This allows project creator to devote more time working on the project.
 
   ## Table of content
 
@@ -23,19 +23,19 @@
   6.) [Questions](#questions)
 
   ## Installation
-  1.) Clone locally
+  clone this project locally by git commands to run
 
   ## Usage
   run node index.js
 
   ## License
-  This appliction is covered under APACHE 2.0 license
+  This appliction is covered under MIT license
 
   ## Contribution
-  Please open PR and send email to be added in contribution
+  Send email to be added as contributor and open pull request
 
   ## Test
-  npm test and unit test
+  npm test or unit test
 
   ## Questions
   
